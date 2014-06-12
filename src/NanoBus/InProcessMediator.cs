@@ -6,11 +6,11 @@ using Autofac.Features.OwnedInstances;
 
 namespace NanoBus
 {
-    public class InProcessBus : IBus
+    public class InProcessMediator : IBus
     {
         private readonly ILifetimeScope _lifetimeScope;
 
-        public InProcessBus(ILifetimeScope lifetimeScope)
+        public InProcessMediator(ILifetimeScope lifetimeScope)
         {
             _lifetimeScope = lifetimeScope;
         }
@@ -42,6 +42,9 @@ namespace NanoBus
                     var tasks = handlers.Value
                         .Select(h => h.Handle(busEvent))
                         .ToArray();
+
+                    if (tasks.Any() == false)
+                        throw new BusException(string.Format("No event handlers are registered for '{0}'", typeof(TBusEvent).Name));
 
                     Task.WaitAll(tasks);
                 }

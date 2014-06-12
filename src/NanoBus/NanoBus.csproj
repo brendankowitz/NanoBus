@@ -65,7 +65,7 @@
     <Compile Include="IBus.cs" />
     <Compile Include="IHandleCommand.cs" />
     <Compile Include="IHandleMulticastEvent.cs" />
-    <Compile Include="InProcessBus.cs" />
+    <Compile Include="InProcessMediator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

@@ -9,12 +9,12 @@ namespace NanoBus
             Instance = bus;
         }
 
-        public static void Send(IBusCommand busCommand)
+        public static void Send<TCommand>(TCommand busCommand) where TCommand : IBusCommand
         {
             Instance.Send(busCommand).Wait();
         }
 
-        public static void Publish(IBusEvent busEvent)
+        public static void Publish<TBusEvent>(TBusEvent busEvent) where TBusEvent : IBusEvent
         {
             Instance.Publish(busEvent).Wait();
         }
