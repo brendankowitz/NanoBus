@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NanoBus.Package", "NanoBus.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NanoBus.Net45", "NanoBus.Net45\NanoBus.Net45.csproj", "{B1D817A0-37AE-4E98-AF9C-4BFD91FBA613}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NanoBus.Tests.Net45", "NanoBus.Tests.Net45\NanoBus.Tests.Net45.csproj", "{6DD08092-6DEE-4F2E-BCFA-0081AE361455}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B1D817A0-37AE-4E98-AF9C-4BFD91FBA613}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1D817A0-37AE-4E98-AF9C-4BFD91FBA613}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1D817A0-37AE-4E98-AF9C-4BFD91FBA613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD08092-6DEE-4F2E-BCFA-0081AE361455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD08092-6DEE-4F2E-BCFA-0081AE361455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD08092-6DEE-4F2E-BCFA-0081AE361455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD08092-6DEE-4F2E-BCFA-0081AE361455}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,9 @@
 ﻿using System.Threading.Tasks;
+#if NET45
+using Nimbus.Handlers;
+#else
 using NanoBus.Handlers;
+#endif
 
 namespace NanoBus.Tests.Requests
 {

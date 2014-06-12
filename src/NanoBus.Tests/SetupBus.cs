@@ -1,7 +1,12 @@
 ﻿using Autofac;
 using NanoBus;
-using NanoBus.Handlers;
 using NUnit.Framework;
+
+#if NET45
+using Nimbus.Handlers;
+#else
+using NanoBus.Handlers;
+#endif
 
 [SetUpFixture]
 // ReSharper disable once CheckNamespace

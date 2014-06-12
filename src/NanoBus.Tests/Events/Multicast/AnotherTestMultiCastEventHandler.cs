@@ -1,5 +1,10 @@
-﻿using System.Threading.Tasks;
+﻿#if NET45
+using Nimbus.Handlers;
+#else
 using NanoBus.Handlers;
+#endif
+
+using System.Threading.Tasks;
 
 namespace NanoBus.Tests.Events.Multicast
 {

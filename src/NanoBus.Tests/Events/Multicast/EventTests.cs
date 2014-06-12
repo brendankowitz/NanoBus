@@ -1,4 +1,10 @@
-﻿using NUnit.Framework;
+﻿#if NET45
+using Nimbus.Handlers;
+#else
+using NanoBus.Handlers;
+#endif
+
+using NUnit.Framework;
 
 namespace NanoBus.Tests.Events.Multicast
 {
