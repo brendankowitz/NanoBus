@@ -19,7 +19,7 @@ public class BusModule : Module
         builder.RegisterType<InProcessBus>()
             .AsImplementedInterfaces()
             .AutoActivate()
-            .OnActivated(c => Bus.SetInstance(c.Instance))
+            .OnActivated(c => Mediator.SetInstance(c.Instance))
             .SingleInstance();
 
         builder.RegisterAssemblyTypes(ThisAssembly)
@@ -40,6 +40,6 @@ And Bus.
 
 ```
 var myCommand = new TestBusCommand();
-Bus.Send(command);
+Mediator.Send(command);
 
 ```
