@@ -1,6 +1,12 @@
 NanoBus
 =======
 
+Install:
+
+```
+PM> Install-Package NanoBus
+```
+
 Configure:
 
 ```
