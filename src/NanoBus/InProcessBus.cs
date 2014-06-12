@@ -23,16 +23,6 @@ namespace NanoBus
             }
         }
 
-        public Task<TResponse> RequestInternal<TRequest, TResponse>(TRequest busRequest) 
-            where TRequest : IBusRequest<TRequest, TResponse> 
-            where TResponse : IBusResponse
-        {
-            using (var handler = _lifetimeScope.Resolve<Owned<IHandleRequest<TRequest, TResponse>>>())
-            {
-                return handler.Value.Handle(busRequest);
-            }
-        }
-
         public Task<TResponse> Request<TRequest, TResponse>(IBusRequest<TRequest, TResponse> busRequest)
             where TRequest : IBusRequest<TRequest, TResponse> 
             where TResponse : IBusResponse
@@ -57,7 +47,5 @@ namespace NanoBus
                 }
             });
         }
-
-
     }
 }

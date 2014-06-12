@@ -61,7 +61,7 @@
     <Compile Include="IHandleRequest.cs" />
     <Compile Include="InvalidRequestTypeException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Bus.cs" />
+    <Compile Include="Mediator.cs" />
     <Compile Include="IBus.cs" />
     <Compile Include="IHandleCommand.cs" />
     <Compile Include="IHandleMulticastEvent.cs" />

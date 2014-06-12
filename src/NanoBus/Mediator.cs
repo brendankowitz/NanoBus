@@ -1,8 +1,6 @@
-using System.Threading.Tasks;
-
 namespace NanoBus
 {
-    public static class Bus
+    public static class Mediator
     {
         private static IBus Instance { get; set; }
 
@@ -25,7 +23,7 @@ namespace NanoBus
             where TRequest : IBusRequest<TRequest, TResponse>
             where TResponse : IBusResponse
         {
-            var response = Instance.Request<TRequest, TResponse>(busRequest);
+            var response = Instance.Request(busRequest);
             response.Wait();
             return response.Result;
         }

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NanoBus</id>
-    <version>1.0.1</version>
+    <version>1.0.3</version>
     <title>NanoBus</title>
     <authors>Brendan Kowitz, Andrew Harcourt</authors>
     <owners></owners>
@@ -19,11 +19,9 @@
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/brendankowitz/NanoBus/blob/master/LICENSE</licenseUrl>
-    <copyright>Copyright  2014</copyright>
+    <copyright>Copyright 2014</copyright>
     <dependencies>
-        <group targetFramework="net40">
-          <!--<dependency id="log4net" version="1.2.10" />-->
-        </group>
+      <dependency id="Autofac" version="3.4.1" />
     </dependencies>
     <references></references>
     <tags></tags>
