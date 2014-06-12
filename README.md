@@ -1,6 +1,13 @@
 NanoBus
 =======
 
+Why!?
+
+When you need to start introducing 'Bus' like patterns and concepts to a project that isn't quite ready for the shenanigans of a real bus. You can think of NanoBus as the bus that you use before you get on the Nimbus.
+
+NanoBus's interfaces are highly compatible (read: copied) from Nimbus, as to soften the transition when the time finally arrives. Note that it is the basic interfaces only, all the advanced features are your motivation to move across as soon as your ready ;)
+You can also use this project all the way back to .NET4.0 so you can get a head start in preping for that right-click-target-4.5 hurdle.
+
 Install:
 
 ```
