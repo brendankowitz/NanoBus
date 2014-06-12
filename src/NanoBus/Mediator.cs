@@ -29,7 +29,7 @@ namespace NanoBus
             return Instance.Publish(busEvent);
         }
 
-        public static Task<TResponse> RequestAsync<TRequest, TResponse>(TRequest busRequest)
+        public static Task<TResponse> RequestAsync<TRequest, TResponse>(IBusRequest<TRequest, TResponse> busRequest)
             where TRequest : IBusRequest<TRequest, TResponse>
             where TResponse : IBusResponse
         {
@@ -46,7 +46,7 @@ namespace NanoBus
             Instance.Publish(busEvent).Wait();
         }
 
-        public static TResponse Request<TRequest, TResponse>(TRequest busRequest)
+        public static TResponse Request<TRequest, TResponse>(IBusRequest<TRequest, TResponse> busRequest)
             where TRequest : IBusRequest<TRequest, TResponse>
             where TResponse : IBusResponse
         {
