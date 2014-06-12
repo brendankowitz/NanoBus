@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace NanoBus
+namespace NanoBus.MessageContracts.Exceptions
 {
     [Serializable]
     public class BusException : Exception

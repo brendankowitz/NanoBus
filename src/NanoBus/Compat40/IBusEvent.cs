@@ -1,4 +1,4 @@
-﻿namespace NanoBus
+﻿namespace NanoBus.MessageContracts
 {
     public interface IBusEvent
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace NanoBus
+namespace NanoBus.MessageContracts.Exceptions
 {
     [Serializable]
     public class InvalidRequestTypeException : BusException
@@ -18,8 +18,7 @@ namespace NanoBus
         {
         }
 
-        protected InvalidRequestTypeException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
+        protected InvalidRequestTypeException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
     }

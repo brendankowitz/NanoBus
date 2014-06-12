@@ -2,9 +2,9 @@
 
 namespace NanoBus
 {
-    public class InProcessMediator : InProcessResolvedMediator
+    public class InProcessMediator : InProcessScopedMediator
     {
-        public InProcessMediator(ILifetimeScope lifetimeScope) : base(() => lifetimeScope)
+        public InProcessMediator(ILifetimeScope lifetimeScope) : base(lifetimeScope.BeginLifetimeScope, true)
         {
         }
     }

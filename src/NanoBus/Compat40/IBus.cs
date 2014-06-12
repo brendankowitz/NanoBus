@@ -1,6 +1,12 @@
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using NanoBus.MessageContracts;
+
+// ReSharper disable CheckNamespace
 
 namespace NanoBus
+// ReSharper restore CheckNamespace
 {
     public interface IBus
     {

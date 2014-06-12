@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
+using NanoBus.MessageContracts;
 
-namespace NanoBus
+namespace NanoBus.Handlers
 {
     public interface IHandleCommand<TBusCommand> where TBusCommand : IBusCommand
     {

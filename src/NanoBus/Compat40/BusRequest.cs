@@ -1,4 +1,6 @@
-﻿namespace NanoBus
+﻿using NanoBus.MessageContracts.Exceptions;
+
+namespace NanoBus.MessageContracts
 {
     // ReSharper disable UnusedTypeParameter
     public abstract class BusRequest<TRequest, TResponse> : IBusRequest<TRequest, TResponse>
