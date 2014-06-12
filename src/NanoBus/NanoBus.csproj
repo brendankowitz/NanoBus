@@ -59,6 +59,7 @@
     <Compile Include="IBusRequest.cs" />
     <Compile Include="IBusResponse.cs" />
     <Compile Include="IHandleRequest.cs" />
+    <Compile Include="InProcessResolvedMediator.cs" />
     <Compile Include="InvalidRequestTypeException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Mediator.cs" />
