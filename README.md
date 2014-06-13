@@ -23,7 +23,7 @@ public class BusModule : Module
     {
         base.Load(builder);
 
-        builder.RegisterType<InProcessBus>()
+        builder.RegisterType<InProcessMediator>()
             .AsImplementedInterfaces()
             .AutoActivate()
             .OnActivated(c => Mediator.SetInstance(c.Instance))
